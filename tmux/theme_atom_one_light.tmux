@@ -1,4 +1,4 @@
-# Source: https://cassidy.codes/blog/2019-08-03-tmux-colour-theme/
+### Source: https://cassidy.codes/blog/2019-08-03-tmux-colour-theme/
 # Using atom one light colors:
 # https://github.com/jonathanchu/atom-one-light-theme/blob/master/atom-one-light-theme.el
 
@@ -19,11 +19,12 @@
 set -g default-terminal "screen-256color"
 
 # window style
-setw -g window-style bg='#FAFAFA'
+set -g window-style bg='#E5E5E6',fg='#383A42'
+set -g window-active-style bg='#FAFAFA',fg='#383A42'
 
 # pane border
-set -g pane-border-style fg='#E5E5E6'
-set -g pane-active-border-style fg='#E45649'
+set -g pane-border-style bg='#E5E5E6',fg='#FAFAFA' 
+set -g pane-active-border-style bg='#E5E5E6',fg='#E45649'
 
 # message text
 set -g message-style bg='#CECECE',fg='#0184BC'
